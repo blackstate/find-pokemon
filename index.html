@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="pokemon-canvas">
+      <img
+        class="find-pokemon-img"
+        src="assets/1.jpg"
+        alt="find pokemon image"
+      />
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: 'AIzaSyBEfHYM2O9GV5zu21Is_hYpjeqUIItal8o',
+        authDomain: 'find-pokemon-f23f0.firebaseapp.com',
+        databaseURL: 'https://find-pokemon-f23f0.firebaseio.com',
+        projectId: 'find-pokemon-f23f0',
+        storageBucket: 'find-pokemon-f23f0.appspot.com',
+        messagingSenderId: '712903089255',
+        appId: '1:712903089255:web:e6f48dc6215bae6a7cc8c2',
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="app.js" async defer></script>
+  </body>
+</html>
